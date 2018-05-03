@@ -33,6 +33,7 @@ tmux
 python3
 python@2
 tfenv
+wget
 "
     for package in $PACKAGES_BREW
     do

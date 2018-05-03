@@ -24,12 +24,8 @@ elif [ $MY_OS = "Linux" ]; then
     alias ls='ls --color=auto'
     alias vi='vim'
     export TERM=linux
-    # LINUXBREW
-    export PATH="${HOME}/.linuxbrew/bin:$PATH"
-    export MANPATH="${HOME}/.linuxbrew/.share/man:$MANPATH"
-    export INFOPATH="${HOME}/.linuxbrew/share/info:$INFOPATH"
-    export PATH="${HOME}/.linuxbrew/sbin:$PATH"
-    source ${HOME}/.linuxbrew/bin/virtualenvwrapper.sh
+    export PATH="${HOME}/linuxbrew/bin:$PATH"
+    source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
     # THINGS WE LIKE FROM STOCK .bashrc FROM UBUNTU
     HISTCONTROL=ignoreboth
