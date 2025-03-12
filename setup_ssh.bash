@@ -17,6 +17,8 @@ Host *
     StrictHostKeyChecking=no
     UserKnownHostsFile=/dev/null
     ConnectTimeout=10
+    # connect to legacy openssh hosts
+    HostKeyAlgorithms=+ssh-dss
     IdentityFile ~/some/other/key
 EOF_SSH_CONFIG
 chmod 644 ~/.ssh/config

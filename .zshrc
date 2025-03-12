@@ -21,6 +21,7 @@ eval "$(direnv hook zsh)"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
 
 source <(kubectl completion zsh)
 source <(kubebuilder completion zsh)
