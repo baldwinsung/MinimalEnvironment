@@ -17,6 +17,9 @@ if [ $OS = "Linux" ]; then
 		# Slack Beta
 		sudo snap install slack --classic
 
+		# pip
+		sudo apt install python3-pip
+
 	fi
 
 fi

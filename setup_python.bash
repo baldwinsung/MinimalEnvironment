@@ -54,7 +54,7 @@ fi
 if [ $OS = "Linux" ]; then
     OS_LINUX_FLAVOR="`cat /etc/os-release | head -1`"
         if [[ ${OS_LINUX_FLAVOR} = *"Ubuntu"* ]]; then
-		    pip3 install virtualenvwrapper
+		    pip3 install virtualenvwrapper --break-system-packages
         fi
      
         if [[ ${OS_LINUX_FLAVOR} = *"CentOS"* ]]; then
