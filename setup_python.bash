@@ -26,7 +26,7 @@ if [ $OS = "Darwin" ]; then
 
 	else
 		echo "check into virtualenv..."
-		if [[ $SW_VERS = 15.* ]]; then
+		if [[ $SW_VERS = 15.* || $SW_VERS = 26.* ]]; then
 			pip3 install virtualenv --break-system-packages
 			pip3 install virtualenvwrapper --break-system-packages
 		fi
@@ -42,8 +42,8 @@ require-virtualenv = true
 require-virtualenv = true
 EOF_PIP_CONF
 
-	# Update for Sequoia
-	if [[ $SW_VERS = 15.* ]]; then
+	# Update for Sequoia & Tahoe
+	if [[ $SW_VERS = 15.* || $SW_VERS = 26.* ]]; then
 		export PATH=~/Library/Python/3.9/bin:$PATH
 		source `which virtualenvwrapper.sh`
 	fi
