@@ -13,8 +13,8 @@ source $ZSH/oh-my-zsh.sh
 export STARSHIP_CONFIG=~/.starship-config.toml
 export WORKON_HOME=$HOME/.virtualenvs
 export GOPATH=$HOME/go
-export PATH=$GOPATH/bin
-if [[ $SW_VERS = 15.* ]]; then
+export PATH=$GOPATH/bin:$PATH
+if [[ $SW_VERS = 15.* || $SW_VERS = 26.* ]]; then
 	export PATH=~/Library/Python/3.9/bin:$PATH
 fi
 
@@ -32,3 +32,4 @@ eval "$(direnv hook zsh)"
 
 V=`which virtualenvwrapper.sh`
 source ${V}
+
