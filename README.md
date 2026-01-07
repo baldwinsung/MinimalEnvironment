@@ -4,18 +4,18 @@ Set of scripts to copy dotfiles and to setup configs for a minimal environment.
 ## Instructions
 
 ### Mac bootstrap
-Verified with Monterey on Intel and Sonoma on Apple Silicon
+Verified with on Intel and on Apple Silicon
 
 ```
 ### Mac bootstrap
 chsh -s /bin/bash
 mkdir meh
 cd meh
-curl -LO https://github.com/baldwinsung/MinimalEnvironment/archive/master.zip
-unzip master.zip
+curl -LO https://github.com/baldwinsung/MinimalEnvironment/archive/main.zip
+unzip main.zip
 cd MinimalEnvironment-main/
-./update.bash
 #mv ~/.bashrc ~/.bashrc_local
+./update.bash
 logout
 # open new shell
 cd meh/MinimalEnvironment-main
@@ -33,14 +33,14 @@ Verified with CentOS Stream 9
 sudo dnf install wget unzip gcc make vim python3-pip git-core zsh -y
 mkdir meh
 cd meh
-wget https://github.com/baldwinsung/MinimalEnvironment/archive/master.zip
-unzip master.zip
-cd MinimalEnvironment-master/
-./update.bash
+wget https://github.com/baldwinsung/MinimalEnvironment/archive/main.zip
+unzip main.zip
+cd MinimalEnvironment-main/
 #mv ~/.bashrc ~/.bashrc_local
+./update.bash
 logout
 # open new shell
-cd meh/MinimalEnvironment-master
+cd meh/MinimalEnvironment-main
 ./setup.bash
 logout
 # open new shell
@@ -54,16 +54,16 @@ Verified with Ubuntu 22.04
 sudo apt install unzip gcc make vim curl git zsh virtualenvwrapper -y
 mkdir meh
 cd meh
-wget https://github.com/baldwinsung/MinimalEnvironment/archive/master.zip
-unzip master.zip
-cd MinimalEnvironment-master/
-./update.bash
+wget https://github.com/baldwinsung/MinimalEnvironment/archive/main.zip
+unzip main.zip
+cd MinimalEnvironment-main/
 #mv ~/.bashrc ~/.bashrc_local
-logout
+./update.bash
+exit
 # open new shell
-cd meh/MinimalEnvironment-master
+cd meh/MinimalEnvironment-main
 ./setup.bash
-logout
+exit
 # open new shell
 ```
 
@@ -75,14 +75,14 @@ Verified with RHEL8
 sudo dnf install wget unzip gcc make vim python3-pip git-core zsh -y
 mkdir meh
 cd meh
-wget https://github.com/baldwinsung/MinimalEnvironment/archive/master.zip
-unzip master.zip
-cd MinimalEnvironment-master/
-./update.bash
+wget https://github.com/baldwinsung/MinimalEnvironment/archive/main.zip
+unzip main.zip
+cd MinimalEnvironment-main/
 #mv ~/.bashrc ~/.bashrc_local
+./update.bash
 logout
 # open new shell
-cd meh/MinimalEnvironment-master
+cd meh/MinimalEnvironment-main
 ./setup_minimal.bash
 logout
 # open new shell
